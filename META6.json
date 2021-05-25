@@ -1,0 +1,28 @@
+{
+  "auth": "cpan:WARRINGD",
+  "authors": [
+    "David Warring"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Abstract W3C DOM Level 2 interface roles",
+  "license": "Artistic-2.0",
+  "name": "DOM",
+  "perl": "6.c",
+  "provides": {
+    "DOM": "lib/DOM.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "git://github.com/libxml-raku/DOM-raku.git",
+  "tags": [
+    "xml",
+    "html",
+    "dom"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}
