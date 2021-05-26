@@ -120,6 +120,12 @@ role Entity does Node {
 role EntityReference does Node {
 }
 
+role Implementation {
+    method createDocument {...}
+    method createDocumentType {...}
+    method hasFeature {...}
+}
+
 role NamedNodeMap {
     method getNamedItem {...}
     method setNamedItem {...}
