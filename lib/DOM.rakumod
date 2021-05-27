@@ -50,6 +50,7 @@ role Attr does Node {
 
 role CharacterData does Node {
     method data {...}
+    method length {...}
     method substringData {...}
     method appendData {...}
     method insertData {...}
@@ -61,6 +62,9 @@ role Comment does CharacterData {
 }
 
 role Document does Node {
+    method doctype {...}
+    method implementation {...}
+    method documentElement {...}
     method createElement {...}
     method createDocumentFragment {...}
     method createTextNode {...}
