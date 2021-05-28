@@ -2,5 +2,8 @@ Revision history for DOM
 
 {{$NEXT}}
 
+0.0.2  2021-05-29T06:36:47+12:00
+    - Remove bogus W3C::DOM::Element method removeAttributeNodeNS()
+
 0.0.1  2021-05-28T16:43:14+12:00
     - Initial version

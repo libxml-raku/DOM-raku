@@ -1,4 +1,4 @@
-unit module W3C::DOM:ver<0.0.1>;
+unit module W3C::DOM:ver<0.0.2>;
 
 enum domNodeType is export(:NodeType) (
    ELEMENT_NODE => 1,
