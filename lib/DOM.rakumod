@@ -24,6 +24,7 @@ role Node {
     method lastChild {...}
     method previousSibling {...}
     method nextSibling {...}
+    method attributes {...}
     method ownerDocument {...}
     method insertBefore {...}
     method replaceChild {...}
@@ -85,7 +86,7 @@ role Document does Node {
 role DocumentFragment does Node {
 }
 
-role DocumentType {
+role DocumentType does Node {
     method name {...}
     method entities {...}
     method notations {...}
@@ -94,8 +95,7 @@ role DocumentType {
     method internalSubset {...}
 }
 
-role Element {
-    method attributes {...} # should be in Node
+role Element does Node {
     method getAttribute {...}
     method setAttribute {...}
     method removeAttribute {...}
