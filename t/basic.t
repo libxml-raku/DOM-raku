@@ -1,4 +1,4 @@
-use DOM;
+use W3C::DOM;
 use Test;
 
 plan 3;
@@ -39,10 +39,10 @@ class DtdAll is DtdMost {
     method internalSubset {...}
 }
 
-class Dtd is DtdAll does DOM::DocumentType {
+class Dtd is DtdAll does W3C::DOM::DocumentType {
 }
 
-dies-ok {(DtdMost but DOM::DocumentType).new};
-lives-ok {(DtdAll but DOM::DocumentType).new};
+dies-ok {(DtdMost but W3C::DOM::DocumentType).new};
+lives-ok {(DtdAll but W3C::DOM::DocumentType).new};
 lives-ok {Dtd.new};
 

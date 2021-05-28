@@ -9,15 +9,15 @@
   ],
   "description": "Abstract W3C DOM Level 2 interface roles",
   "license": "Artistic-2.0",
-  "name": "DOM",
+  "name": "W3C::DOM",
   "perl": "6.c",
   "provides": {
-    "DOM": "lib/DOM.rakumod",
-    "DOM::Test": "lib/DOM/Test.rakumod"
+    "W3C::DOM": "lib/W3C/DOM.rakumod",
+    "W3C::DOM::Test": "lib/W3C/DOM/Test.rakumod"
   },
   "resources": [
   ],
-  "source-url": "git://github.com/libxml-raku/DOM-raku.git",
+  "source-url": "git://github.com/libxml-raku/W3C-DOM-raku.git",
   "tags": [
     "xml",
     "html",
