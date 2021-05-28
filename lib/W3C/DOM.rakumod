@@ -109,7 +109,6 @@ role Element does Node {
     method removeAttributeNS {...}
     method getAttributeNodeNS {...}
     method setAttributeNodeNS {...}
-    method removeAttributeNodeNS {...}
     method getElementsByTagNameNS {...}
     method hasAttribute {...}
     method hasAttributeNS {...}
