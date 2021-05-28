@@ -12,7 +12,8 @@
   "name": "DOM",
   "perl": "6.c",
   "provides": {
-    "DOM": "lib/DOM.rakumod"
+    "DOM": "lib/DOM.rakumod",
+    "DOM::Test": "lib/DOM/Test.rakumod"
   },
   "resources": [
   ],

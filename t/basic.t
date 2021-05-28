@@ -3,7 +3,31 @@ use Test;
 
 plan 3;
 
-class DtdMost {
+class Node {
+    method nodeName {...}
+    method nodeValue {...}
+    method parentNode {...}
+    method childNodes {...}
+    method firstChild {...}
+    method lastChild {...}
+    method previousSibling {...}
+    method nextSibling {...}
+    method hasAttributes {...}
+    method attributes {...}
+    method ownerDocument {...}
+    method insertBefore {...}
+    method replaceChild {...}
+    method removeChild {...}
+    method appendChild {...}
+    method hasChildNodes {...}
+    method cloneNode {...}
+    method normalize {...}
+    method isSupported {...}
+    method namespaceURI {...}
+    method prefix {...}
+    method localName {...}
+}
+class DtdMost is Node {
     method name {...}
     method entities {...}
     method notations {...}

@@ -144,7 +144,7 @@ role NamedNodeMap {
 
 role Notation does Node {
     method publicId {...}
-    method systemID {...}
+    method systemId {...}
 }
 
 role ProcessingInstruction does Node {
