@@ -36,7 +36,7 @@ W3C::DOM::Comment | W3C::DOM::CharacterData |
 W3C::DOM::Document | W3C::DOM::Node |  doctype implementation documentElement createElement createDocumentFragment createTextNode createComment createCDATASection createProcessingInstruction createAttribute createEntityReference getElementsByTagName | importNode createElementNS createAttributeNS getElementsByTagNameNS getElementById
 W3C::DOM::DocumentFragment | W3C::DOM::Node |
 W3C::DOM::DocumentType | W3C::DOM::Node | name publicId systemId entities notations
-W3C::DOM::Element | W3C::DOM::Node | attributes getAttribute setAttribute removeAttribute getAttributeNode setAttributeNode removeAttributeNode getElementsByTagName | getAttributeNS setAttributeNS removeAttributeNS getAttributeNodeNS setAttributeNodeNS removeAttributeNodeNS getElementsByTagNameNS hasAttribute hasAttributeNS
+W3C::DOM::Element | W3C::DOM::Node | attributes getAttribute setAttribute removeAttribute getAttributeNode setAttributeNode removeAttributeNode getElementsByTagName | getAttributeNS setAttributeNS removeAttributeNS getAttributeNodeNS setAttributeNodeNS getElementsByTagNameNS hasAttribute hasAttributeNS
 W3C::DOM::Entity | W3C::DOM::Node | publicId systemId notationName
 W3C::DOM::EntityReference | W3C::DOM::Node
 W3C::DOM::Implementation |  | createDocument createDocumentType hasFeature
