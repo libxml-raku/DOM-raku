@@ -16,6 +16,7 @@ enum domNodeType is export(:NodeType) (
 );
 
 role Node {
+    method nodeType {...}
     method nodeName {...}
     method nodeValue {...}
     method parentNode {...}
@@ -42,6 +43,7 @@ role Node {
 }
 
 role Attr does Node {
+    method nodeType { +ATTRIBUTE_NODE }
     method name {...}
     method specified {...}
     method value {...}
@@ -60,6 +62,8 @@ role CharacterData does Node {
 }
 
 role Comment does CharacterData {
+    method nodeType { +COMMENT_NODE }
+    method nodeName { '#comment' }
 }
 
 role Document does Node {
@@ -84,9 +88,11 @@ role Document does Node {
 }
 
 role DocumentFragment does Node {
+    method nodeType { +DOCUMENT_FRAGMENT_NODE }
 }
 
 role DocumentType does Node {
+    method nodeType { +DOCUMENT_TYPE_NODE }
     method name {...}
     method entities {...}
     method notations {...}
@@ -96,6 +102,8 @@ role DocumentType does Node {
 }
 
 role Element does Node {
+    method nodeType { +ELEMENT_NODE }
+    method tagName {...}
     method getAttribute {...}
     method setAttribute {...}
     method removeAttribute {...}
@@ -115,17 +123,19 @@ role Element does Node {
 }
 
 role Entity does Node {
+    method nodeType { +ENTITY_NODE }
     method publicId {...}
     method systemId {...}
     method notationName {...}
 }
 
 role EntityReference does Node {
+    method nodeType { +ENTITY_REFERENCE_NODE }
 }
 
 role Implementation {
-    method createDocument {...}
-    method createDocumentType {...}
+    method createDocument($, $?, $?) {...}
+    method createDocumentType($, $?, $?) {...}
     method hasFeature {...}
 }
 
@@ -142,18 +152,24 @@ role NamedNodeMap {
 }
 
 role Notation does Node {
+    method nodeType { +NOTATION_NODE }
     method publicId {...}
     method systemId {...}
 }
 
 role ProcessingInstruction does Node {
+    method nodeType { +PROCESSING_INSTRUCTION_NODE }
     method target {...}
     method data {...}
 }
 
 role Text does CharacterData {
+    method nodeType { +TEXT_NODE }
+    method nodeName { '#text' }
     method splitText {...}
 }
 
 role CDATASection does Text {
+    method nodeType { +CDATA_SECTION_NODE }
+    method nodeName { '#cdata-section' }
 }
