@@ -1,6 +1,7 @@
 Revision history for DOM
 
 {{$NEXT}}
+    - Upload to zef ecosystem
 
 0.0.2  2021-05-29T06:36:47+12:00
     - Remove bogus W3C::DOM::Element method removeAttributeNodeNS()
